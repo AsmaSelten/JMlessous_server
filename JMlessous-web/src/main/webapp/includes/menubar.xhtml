@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<ul class="nav navbar-nav">
+
+		<li><p:link outcome="/client/clientHome"
+				onclick="clearBreadCrumbs()">
+				<i class="fa fa-home"></i>
+				<span>Home</span>
+			</p:link></li>
+
+		<li class="dropdown"><a class="dropdown-toggle"
+			data-toggle="dropdown">Crédit <span class="caret"></span> <i
+				class="fa fa-eur"></i>
+		</a>
+
+			<ul class="dropdown-menu" role="menu">
+				<li><p:link outcome="/client/creditImmobilier">
+						<span>Immobilier</span>
+						
+					</p:link></li>
+				<li><p:link outcome="/client/creditConsommation">
+						<span>Consommation</span>
+						
+					</p:link></li>
+				<li><p:link outcome="/client/simulateurCredit">
+						<span>Simulateur</span>
+						
+					</p:link></li>
+
+			</ul></li>
+
+
+		<!--      Compte Bancaire  -->
+
+
+
+		<li class="dropdown"><a class="dropdown-toggle"
+			data-toggle="dropdown">Compte Bancaire <span class="caret"></span>
+				<i class="fa fa-institution"></i>
+		</a>
+
+			<ul class="dropdown-menu" role="menu">
+				<li><p:link outcome="/client/creditImmobilier">
+						<span>Epargne</span>
+						
+					</p:link></li>
+				<li><p:link outcome="/client/creditConsommation">
+						<span>Courant</span>
+						
+					</p:link></li>
+			</ul></li>
+
+		<!--      Compte Investissement  -->
+
+		<li class="dropdown"><a class="dropdown-toggle"
+			data-toggle="dropdown">Compte Investissement <span class="caret"></span>
+				<i class="fa fa-google-wallet"></i>
+		</a>
+
+			<ul class="dropdown-menu" role="menu">
+				<li><p:link outcome="/client/creditImmobilier">
+						<span>Dépôt</span>
+						
+					</p:link></li>
+				<li><p:link outcome="/client/creditConsommation">
+						<span>Titre</span>
+						
+					</p:link></li>
+			</ul></li>
+			
+			<!--      Compte Investissement  -->
+
+		<li class="dropdown"><a class="dropdown-toggle"
+			data-toggle="dropdown">Assurance<span class="caret"></span>
+				<i class="fa fa-medkit"></i>
+		</a>
+
+			<ul class="dropdown-menu" role="menu">
+				<li><p:link outcome="/client/creditImmobilier">
+						<span>BNP Paribas</span>
+					</p:link></li>
+				<li><p:link outcome="/client/creditConsommation">
+						<span>CNP</span>
+					</p:link></li>
+			</ul></li>
+			
+			<li><p:link outcome="/client/clientHome"
+				onclick="clearBreadCrumbs()">
+				<i class="fa fa-line-chart"></i>
+				<span>Bourse</span>
+			</p:link></li>
+			
+			<li class="dropdown"><a class="dropdown-toggle"
+			data-toggle="dropdown">Espace Client<span class="caret"></span>
+				<i class="fa fa-user"></i>
+		</a>
+
+			<ul class="dropdown-menu" role="menu">
+				<li><p:link outcome="/client/creditImmobilier">
+						<span>Mes comptes</span>
+					</p:link></li>
+				<li><p:link outcome="/client/creditConsommation">
+						<span>Portefeuille</span>
+					</p:link></li>
+				<li><p:link outcome="/client/creditConsommation">
+						<span>Virement</span>
+					</p:link></li>
+				<li><p:link outcome="/client/creditConsommation">
+						<span>Demande Appel conseiller</span>
+					</p:link></li>
+			</ul></li>
+			
+			
+			
+
+	</ul>
+
+</ui:composition>
